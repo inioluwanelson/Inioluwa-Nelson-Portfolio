@@ -62,6 +62,18 @@
       .navbar-toggler-icon {
         background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Set the icon color to white */
       }
+       /* Left-align nav items in collapsible menu */
+        @media (max-width: 991.98px) { /* Target screens smaller than lg */
+            .navbar-nav {
+                text-align: left; /* Align text to the left */
+                padding-left: 15px; /* Add padding for better alignment */
+            }
+
+            .nav-item {
+                margin-right: 0; /* Remove right margin on smaller screens */
+                padding: 15px 0; /* Add padding for separation */
+            }
+        }
       /* Hero Section Styles */
       .hero-section {
         background-image: url("./istockphoto-1909712886-612x612.jpg");
