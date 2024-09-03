@@ -65,7 +65,18 @@
       .nav-tabs {
         border-bottom: 2px solid #444; /* Dark border under tabs */
       }
+       /* Left-align nav items in collapsible menu */
+        @media (max-width: 991.98px) { /* Target screens smaller than lg */
+            .navbar-nav {
+                text-align: left; /* Align text to the left */
+                padding-left: 15px; /* Add padding for better alignment */
+            }
 
+            .nav-item {
+                margin-right: 0; /* Remove right margin on smaller screens */
+                padding: 5px 0; /* Add padding for separation */
+            }
+        }
       .nav-tabs .nav-link {
         color: #ffff; /* Light gray text color */
         background-color: #333; /* Dark background for tabs */
